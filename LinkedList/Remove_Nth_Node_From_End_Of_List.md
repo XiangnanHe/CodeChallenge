@@ -19,9 +19,10 @@ My Answers:
 
 C++:
 
-class Solutin{
+class Solution{
   ListNode* RemoveNthNode(ListNode* N){
-    
+    ListNode* first = &N
+      
   }
 
 }
