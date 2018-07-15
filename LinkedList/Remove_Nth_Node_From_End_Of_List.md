@@ -19,6 +19,12 @@ My Answers:
 
 C++:
 
+class Solutin{
+  ListNode* RemoveNthNode(ListNode* N){
+    
+  }
+
+}
 
 
 
