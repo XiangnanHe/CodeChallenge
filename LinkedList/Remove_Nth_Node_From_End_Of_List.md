@@ -21,23 +21,24 @@ C++:
 
 class Solution{
   ListNode* RemoveNthNode(ListNode* node, int N){
+    if(node == NULL) return node;
     ListNode newNode = ListNode(-1);
-    newNode.next = &node;
-    ListNode* first = newNode;
-    ListNode* second = newNode;
+    newNode.next = node;
+    ListNode* first = &newNode;
+    ListNode* second = &newNode;
     
     while(N > 0){
         first = firs->next;
         N--;    
     } 
-    while(!first.next){
+    while(first->next != NULL){  //cannot use !first->next
         first = first->next;
         second = second->next;    
     }
     
     ListNode* to_be_deleted = second.next;
     second->next = second->next->next;
-    delete to_be_deleted;
+    delete to_be_deleted;     //It is ok if skip this line of code
     return newNode.next;
     
   }
