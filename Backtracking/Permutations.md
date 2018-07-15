@@ -41,7 +41,7 @@ class Solution{
 
 Python:
 class Solution:
-    def permute(nums):
+    def permute(self, nums):
         """ 
         type nums: list[int]
         rtype: list[list[int]]        
