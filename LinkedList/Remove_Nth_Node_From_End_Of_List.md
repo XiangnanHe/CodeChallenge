@@ -20,6 +20,7 @@ My Answers:
 C++:
 
 class Solution{
+public:
   ListNode* RemoveNthNode(ListNode* node, int N){
     if(node == NULL) return node;
     ListNode newNode = ListNode(-1);
