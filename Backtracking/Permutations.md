@@ -15,12 +15,35 @@ Output:
 
 C++:
 
+class Solution{
+public:
+    vector<vector<int>> permute(vector<int> & nums){
+        
+    
+    
+    }
+
+
+}
 
 
 
 Java:
+class Solution{
+    public List<List<Integer>> permute(int[] nums){
+        
+    
+    }
+
+}
+
 
 
 Python:
-
+class Solution:
+    def permute(nums):
+        """ 
+        type nums: list[int]
+        rtype: list[list[int]]        
+        """
 
