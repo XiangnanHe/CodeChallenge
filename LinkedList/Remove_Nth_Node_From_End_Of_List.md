@@ -20,9 +20,26 @@ My Answers:
 C++:
 
 class Solution{
-  ListNode* RemoveNthNode(ListNode* N){
-    ListNode* first = &N
-      
+  ListNode* RemoveNthNode(ListNode* node, int N){
+    ListNode newNode = ListNode(-1);
+    newNode.next = &node;
+    ListNode* first = newNode;
+    ListNode* second = newNode;
+    
+    while(N > 0){
+        first = firs->next;
+        N--;    
+    } 
+    while(!first.next){
+        first = first->next;
+        second = second->next;    
+    }
+    
+    ListNode* to_be_deleted = second.next;
+    second->next = second->next->next;
+    delete to_be_deleted;
+    return newNode.next;
+    
   }
 
 }
