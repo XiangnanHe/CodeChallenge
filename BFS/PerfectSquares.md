@@ -18,6 +18,10 @@ class Solution{
 public:
   int PerfectSquares(int N){
     
+    While(i < N){
+    
+    }
+    
   
   }
 
