@@ -14,16 +14,29 @@ Explanation: 13 = 4 + 9.
 
 C++:
 
-class Solution{
+class Solution {
 public:
-  int PerfectSquares(int N){
-    
-    While(i < N){
-    
+    int numSquares(int n) {
+        int i = 1;
+        int res = 0;
+        vector<int> list;
+        list.push_back(n);
+        return helper(list, res);
     }
-    
-  
-  }
-
-
-}
+    int helper( vector<int> &list, int res){        
+        vector<int> nextList;
+        for(size_t i = 0; i< list.size(); i++){
+            int j = 1;
+            int temp = list[i];            
+            while(j*j <= temp){
+                if(j*j == temp){
+                    return res+1;
+                }
+                nextList.push_back(temp - j*j);
+                j++;
+            }
+        }
+        return helper(nextList, res + 1);
+        
+    }
+};
