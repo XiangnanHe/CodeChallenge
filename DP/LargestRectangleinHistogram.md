@@ -18,3 +18,8 @@ Output: 10
 
 
 This problem is similar to MaximumRectangle problem.
+
+Brute force O(n2)
+With every bar as starting point and calculate the maximal rectangle
+
+Divide and Conquer O(nlogn)
