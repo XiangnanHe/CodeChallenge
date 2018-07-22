@@ -19,7 +19,11 @@ Output: 10
 
 This problem is similar to MaximumRectangle problem.
 
+Method 1:
 Brute force O(n2)
 With every bar as starting point and calculate the maximal rectangle
 
-Divide and Conquer O(nlogn)
+Method 2:
+Calculate the area of each bar as the minimum height;
+Using stack to keep track of the bars.
+
