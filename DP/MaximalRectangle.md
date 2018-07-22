@@ -10,3 +10,6 @@ Input:
   ["1","0","0","1","0"]
 ]
 Output: 6
+
+
+This problem can use LargestRectangleinHistogram solution as subroutine.
